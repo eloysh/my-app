@@ -1,0 +1,65 @@
+
+@media only screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) {
+    .user-avatar img {
+      width: 150px; 
+      height: 150px;
+    }
+  }
+.contact-page-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .realtor-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .realtor-info img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px; 
+  }
+  
+  .realtor-details {
+    text-align: center; 
+  }
+  
+  .realtor-details h2 {
+    margin-bottom: 10px;
+  }
+  
+  .chat-buttons-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+  }
+  
+  .chat-buttons-container button {
+    margin: 10px; 
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex: 1; 
+    max-width: 200px; 
+  }
+  
+  .chat-buttons-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .chat-buttons-container button img {
+    margin-right: 10px;
+  }
+  

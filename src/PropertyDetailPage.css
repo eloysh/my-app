@@ -1,0 +1,21 @@
+
+
+
+.property-details {
+    padding: 20px;
+  }
+  
+  .property-details img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .property-details h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .property-details p {
+    margin-top: 10px;
+    color: #666;
+  }

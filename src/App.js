@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
+import UserProfilePage from './UserProfilePage';
+import LoginPage from './LoginPage'; // Страница входа
+import RegisterPage from './RegisterPage'; // Страница регистрации
 
-function App() {
+const App = () => {
+  const isAuthenticated = true; // Проверка аутентификации (замените на свою логику)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          {isAuthenticated ? <Redirect to="/profile" /> : <LoginPage />}
+        </Route>
+        <Route path="/register">
+          <RegisterPage />
+        </Route>
+        <Route path="/profile">
+          {isAuthenticated ? <UserProfilePage /> : <Redirect to="/" />}
+        </Route>
+      </Switch>
+    </Router>
   );
-}
+};
 
 export default App;
