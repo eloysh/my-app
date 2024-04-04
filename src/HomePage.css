@@ -1,4 +1,4 @@
-
+/* HomePage.css */
 
 .homepage-container {
     max-width: 1200px;
@@ -28,6 +28,7 @@
     padding: 20px;
     cursor: pointer;
 }
+
 
 .property-card h3 {
     margin-top: 0;
@@ -65,8 +66,8 @@
     padding: 20px;
     border-radius: 10px;
     position: relative;
-    width: 90%;
-    max-width: 500px;
+    width: 80%;
+    max-width: 400px;
     overflow-y: auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
@@ -93,8 +94,7 @@
 .prev-btn,
 .next-btn {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    bottom: 10px;
     background-color: rgba(255, 255, 255, 0.5);
     border: none;
     font-size: 20px;
@@ -112,10 +112,12 @@
 
 .prev-btn {
     left: 10px;
+    transform: translateY(50%);
 }
 
 .next-btn {
     right: 10px;
+    transform: translateY(50%);
 }
 
 .property-info {
@@ -125,7 +127,7 @@
 .tabs {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Уменьшил отступ для новой кнопки "Сроки" */
 }
 
 .tabs button {
